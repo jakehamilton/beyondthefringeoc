@@ -5,7 +5,7 @@ $header_nav_color: lighten(black, 7%);
 $header_shadow_color: rgba(0, 0, 0, .15);
 
 // Content
-$content_bg: darken(white, 7%);
+$content_bg: darken(white, 1%);
 $link_color: lighten(blue, 5%) + darken(skyblue, 45%);
 
 
@@ -14,7 +14,11 @@ $link_color: lighten(blue, 5%) + darken(skyblue, 45%);
 // Index
 $person_card_bg: white;
 $person_separator_color: darken(white, 7%);
+$person_shadow_color: rgba(0, 0, 0, .1);
 $products_card_bg: white;
 $product_border_color: darken(white, 7%);
+$products_shadow_color: rgba(0, 0, 0, .1);
 $testimonial_card_bg: white;
+$testimonial_shadow_color: rgba(0, 0, 0, .2);
 $services_card_bg: white;
+$services_shadow_color: rgba(0, 0, 0, .1);
