@@ -5,6 +5,7 @@
   var jade = require('gulp-jade');
   var jslint = require('gulp-jslint');
   var browserSync = require('browser-sync').create();
+  var autoprefixer = require('gulp-autoprefixer');
 
   gulp.task('serve', ['css', 'html', 'js'], function() {
 
@@ -25,6 +26,10 @@
   gulp.task('css', function() {
     return gulp.src('./src/sass/*.scss')
       .pipe(sass())
+      .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+      }))
       .pipe(gulp.dest('./app/assets/css/'))
       .pipe(browserSync.stream());
   });

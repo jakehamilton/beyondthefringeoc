@@ -1,0 +1,265 @@
+.sections {
+  margin: 0 auto;
+  margin-top: 95px;
+  width: 100%; }
+  .sections:NOT(:first-of-type) {
+    margin-top: 15px; }
+
+.sections--people {
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  padding-top: 0;
+  max-width: 1020px; }
+  .sections--people .people {
+    display: block; }
+    .sections--people .people .person__wrapper {
+      position: relative;
+      float: left;
+      display: inline-block;
+      margin-top: 16px;
+      width: 320px;
+      max-width: 350px;
+      min-width: 250px;
+      background: white;
+      margin-left: 6px;
+      margin-right: 6px;
+      border-radius: 1px; }
+      .sections--people .people .person__wrapper .person {
+        padding-top: 16px; }
+        .sections--people .people .person__wrapper .person .person__image {
+          display: block;
+          margin: 0 auto;
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          overflow: hidden;
+          background-size: cover; }
+        .sections--people .people .person__wrapper .person .janine {
+          background-image: url("../img/profile_1.jpg"); }
+        .sections--people .people .person__wrapper .person .deanna {
+          background-image: url("../img/profile_2.jpg");
+          background-position: -35px center; }
+        .sections--people .people .person__wrapper .person .ashley {
+          background-image: url("../img/profile_3.jpg"); }
+        .sections--people .people .person__wrapper .person .person__name {
+          text-align: center;
+          margin-top: 16px;
+          font-weight: bold;
+          font-size: 110%;
+          font-family: Montserrat, "Helvetica Neue", sans-serif; }
+        .sections--people .people .person__wrapper .person .person__description p {
+          text-align: center;
+          font-size: 90%;
+          padding-left: 8px;
+          padding-right: 8px; }
+        .sections--people .people .person__wrapper .person .link-icon {
+          display: inline-block;
+          color: #2e75ff;
+          padding-left: 8px;
+          padding-right: 15px; }
+        .sections--people .people .person__wrapper .person a {
+          display: inline-block;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: 8px;
+          color: #2e75ff;
+          text-decoration: none; }
+          .sections--people .people .person__wrapper .person a:last-of-type {
+            padding-bottom: 16px; }
+          .sections--people .people .person__wrapper .person a:hover {
+            text-decoration: underline; }
+        .sections--people .people .person__wrapper .person hr {
+          border-top: 0.5px solid #ededed; }
+
+.sections--testimonials {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/testimonial_bg.jpg");
+  background-size: cover; }
+  .sections--testimonials::before,
+  .sections--testimonials::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background-size: 30px 30px, 30px 30px;
+    background-repeat: repeat-x; }
+  .sections--testimonials::before {
+    top: 0;
+    background-image: linear-gradient(135deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(-135deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(180deg, rgba(0, 0, 0, 0.8) 10%, transparent); }
+  .sections--testimonials::after {
+    bottom: 0;
+    background-image: linear-gradient(45deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(-45deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8) 95%); }
+  .sections--testimonials .testimonials {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px; }
+    .sections--testimonials .testimonials .testimonial {
+      width: 100%;
+      max-width: 750px;
+      padding: 16px;
+      border-radius: 1px;
+      background: white; }
+      .sections--testimonials .testimonials .testimonial:NOT(:first-of-type) {
+        margin-top: 35px; }
+      .sections--testimonials .testimonials .testimonial .testimonial__name {
+        font-weight: bold;
+        font-family: Montserrat, "Helvetica Neue", sans-serif;
+        font-size: 125%; }
+        .sections--testimonials .testimonials .testimonial .testimonial__name a {
+          color: black;
+          text-decoration: none; }
+        .sections--testimonials .testimonials .testimonial .testimonial__name .fa {
+          padding-left: 8px; }
+      .sections--testimonials .testimonials .testimonial .testimonial__description {
+        padding-top: 8px;
+        font-family: Montserrat, "Helvetica Neue", sans-serif;
+        line-height: 24px; }
+
+.sections--products {
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 1px;
+  max-width: 1020px; }
+  .sections--products .products {
+    padding: 16px;
+    background: white; }
+    .sections--products .products h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 165%; }
+    .sections--products .products .products__list {
+      display: table;
+      margin-top: 16px; }
+      .sections--products .products .products__list .products__list--item {
+        display: table;
+        height: 60px;
+        padding-top: 8px;
+        padding-bottom: 8px; }
+        .sections--products .products .products__list .products__list--item:NOT(:last-of-type) {
+          border-bottom: 1px solid #ededed; }
+        .sections--products .products .products__list .products__list--item .item__image {
+          display: table-cell;
+          width: 120px;
+          height: 120px;
+          background-size: cover;
+          background-position: center center; }
+          .sections--products .products .products__list .products__list--item .item__image.brazilian-blowout {
+            background-image: url("../img/bb.jpg"); }
+          .sections--products .products .products__list .products__list--item .item__image.enjoy {
+            background-image: url("../img/enjoy.jpg"); }
+          .sections--products .products .products__list .products__list--item .item__image.eufora {
+            background-image: url("../img/eufora.jpg"); }
+        .sections--products .products .products__list .products__list--item .item__description {
+          display: table-cell;
+          vertical-align: middle;
+          padding-left: 25px; }
+          .sections--products .products .products__list .products__list--item .item__description .item__name {
+            display: inline;
+            font-weight: bold; }
+
+.sections--map {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  height: 700px; }
+  .sections--map::before,
+  .sections--map::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background-size: 30px 30px, 30px 30px;
+    background-repeat: repeat-x; }
+  .sections--map::before {
+    top: 0;
+    z-index: 99;
+    background-image: linear-gradient(135deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(-135deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(180deg, rgba(0, 0, 0, 0.8) 10%, transparent); }
+  .sections--map::after {
+    bottom: 0;
+    z-index: 99;
+    background-image: linear-gradient(45deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(-45deg, #ededed 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8) 95%); }
+  .sections--map .map {
+    position: relative;
+    height: 100%; }
+    .sections--map .map .map__link {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 99; }
+    .sections--map .map .map__text--wrapper {
+      position: absolute;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 98; }
+      .sections--map .map .map__text--wrapper .map__text {
+        padding-left: 40px;
+        font-size: 210%;
+        font-weight: bold;
+        font-family: Montserrat, "Helvetica Neue", sans-serif;
+        line-height: 60px; }
+        @media screen and (max-width: 380px) {
+          .sections--map .map .map__text--wrapper .map__text {
+            font-size: 110%; } }
+        .sections--map .map .map__text--wrapper .map__text span {
+          padding: 8px;
+          padding-left: 16px;
+          padding-right: 16px;
+          color: white;
+          background: #2e75ff; }
+    .sections--map .map .map__google-map {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      opacity: .99;
+      z-index: 1;
+      background-image: url("../img/map.png");
+      background-size: cover;
+      background-position: center center; }
+
+.sections--services {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1020px;
+  padding: 10px; }
+  .sections--services .services {
+    padding: 16px;
+    background: white; }
+    .sections--services .services h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 165%; }
+    .sections--services .services hr {
+      border-top: 0.5px solid #ededed; }
+    .sections--services .services .service {
+      padding: 8px; }
+      .sections--services .services .service .service--info .service--name {
+        font-size: 135%;
+        font-weight: bold; }
