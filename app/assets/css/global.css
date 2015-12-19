@@ -28,7 +28,7 @@ html, body {
   background: white;
   z-index: 10000000000;
   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.15), 1px 1px 5px rgba(0, 0, 0, 0.15); }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .site-header {
       position: absolute;
       width: 100vw;
@@ -67,7 +67,7 @@ html, body {
         line-height: 95px;
         color: #121212;
         text-decoration: none; }
-        @media screen and (max-width: 404px) {
+        @media screen and (max-width: 500px) {
           .site-header .header__wrapper .header--right .header--nav a {
             display: none; } }
         .site-header .header__wrapper .header--right .header--nav a:hover {
@@ -84,11 +84,11 @@ html, body {
 
 .site-content {
   height: 100%;
-  background: #ededed; }
+  background: #fcfcfc; }
 
 .site-footer {
   height: 28px;
-  background: #ededed; }
+  background: #fcfcfc; }
   .site-footer .footer__wrapper {
     margin: 0 auto;
     display: -webkit-flex;

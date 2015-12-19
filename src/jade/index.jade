@@ -8,6 +8,10 @@ block css
   
 block content
   .sections
+    .sections--hero
+      .hero
+        .hero__wrapper
+          h1.title Beyond The Fringe OC Salon
     .sections--people
       .people
         .person__wrapper
@@ -56,32 +60,6 @@ block content
           .testimonial__name Elizabeth Blanchard #[a(href="https://www.facebook.com/beyondthefringeoc").fa.fa-facebook]
           .testimonial__description Great location, great customer service and incredible stylists! Absolutely LOVE this place!
           
-    .sections--products
-      .products
-        h3 Products
-        .products__list
-          .products__list--item
-            .item__image.brazilian-blowout
-            .item__description #[.item__name Brazilian Blowout] adds beautiful shine and makes blow drying easier and faster. Can also be used in your every day hair care.
-          .products__list--item
-            .item__image.enjoy
-            .item__description #[.item__name Enjoy] provides a wide variety of products ranging from shampoos and conditioners to styling and finishing.
-          .products__list--item
-            .item__image.eufora
-            .item__description #[.item__name Eufora] is another leading name in hair care. These fast-acting products will keep your hair in shape!
-
-    .sections--map
-      .map
-        a(href="https://www.google.com/maps/place/Kaleidoscope+Courtyards/@33.5611165,-117.6739301,17z/data=!3m1!4b1!4m2!3m1!1s0x80dceeedecc3b2d5:0x11cc1d8631ad1641").map__link
-        .map__text--wrapper
-          .map__text
-            span Sola Salons
-            br
-            span The Kaleidascope
-            br
-            span Beautiful Mission Viejo, California
-        .map__google-map
-
     .sections--services
       .services
         h3 Services
@@ -137,3 +115,29 @@ block content
             .service--prices
               ul
                 li Specialty Services: $100 and up
+
+    .sections--map
+      .map
+        a(href="https://www.google.com/maps/place/Kaleidoscope+Courtyards/@33.5611165,-117.6739301,17z/data=!3m1!4b1!4m2!3m1!1s0x80dceeedecc3b2d5:0x11cc1d8631ad1641").map__link
+        .map__text--wrapper
+          .map__text
+            span Sola Salons
+            br
+            span The Kaleidascope
+            br
+            span Beautiful Mission Viejo, CA
+        .map__google-map
+
+    .sections--products
+      .products
+        h3 Products
+        .products__list
+          .products__list--item
+            .item__image.brazilian-blowout
+            .item__description #[.item__name Brazilian Blowout] adds beautiful shine and makes blow drying easier and faster. Can also be used in your every day hair care.
+          .products__list--item
+            .item__image.enjoy
+            .item__description #[.item__name Enjoy] provides a wide variety of products ranging from shampoos and conditioners to styling and finishing.
+          .products__list--item
+            .item__image.eufora
+            .item__description #[.item__name Eufora] is another leading name in hair care. These fast-acting products will keep your hair in shape!

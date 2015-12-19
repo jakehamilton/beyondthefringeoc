@@ -39,7 +39,7 @@ html, body {
   z-index: 10000000000;
   box-shadow: -1px 1px 5px $header_shadow_color, 1px 1px 5px $header_shadow_color;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     position: absolute;
     width: 100vw;
     box-shadow: none;
@@ -73,7 +73,7 @@ html, body {
           color: $header_nav_color;
           text-decoration: none;
 
-          @media screen and (max-width: 404px) {
+          @media screen and (max-width: 500px) {
             display: none;
           }
 
