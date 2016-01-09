@@ -211,6 +211,8 @@
             background-image: url("../img/enjoy.jpg"); }
           .sections--products .products .products__list .products__list--item .item__image.eufora {
             background-image: url("../img/eufora.jpg"); }
+          .sections--products .products .products__list .products__list--item .item__image.layrite {
+            background-image: url("../img/layrite.png"); }
         .sections--products .products .products__list .products__list--item .item__description {
           display: table-cell;
           vertical-align: middle;
