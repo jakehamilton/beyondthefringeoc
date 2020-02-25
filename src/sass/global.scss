@@ -1,0 +1,151 @@
+@import 'partials/vars';
+@import 'partials/colors';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 1em;
+  font-family: $main_font;
+}
+
+.site {
+  display: table;
+
+  width: 100%;
+  height: 100%;
+}
+
+.site-header,
+.site-content,
+.site-footer {
+  display: table-row;
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  height: $header_height_desktop_full;
+  background: $header_bg;
+  z-index: 10000000000;
+  box-shadow: -1px 1px 5px $header_shadow_color, 1px 1px 5px $header_shadow_color;
+
+  @media screen and (max-width: 500px) {
+    position: absolute;
+    width: 100vw;
+    box-shadow: none;
+  }
+
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: $header_max_width;
+
+    .header--left,
+    .header--right {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .header--right {
+      justify-content: flex-end;
+
+      .header--nav {
+        a {
+          display: inline-block;
+          margin-right: 7px;
+          padding-left: 28px;
+          padding-right: 28px;
+          line-height: $header_height_desktop_full;
+          color: $header_nav_color;
+          text-decoration: none;
+
+          @media screen and (max-width: 500px) {
+            display: none;
+          }
+
+          &:hover {
+            background: $header_hover;
+          }
+
+          &:last-child {
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+
+    .header--left {
+      .brand {
+        padding: 3px;
+        padding-top: $header_branding_offset;
+        height: $header_height_desktop_full - $header_branding_offset;
+        width: auto;
+      }
+    }
+  }
+
+  &.scrolling {
+    height: $header_height_desktop_scrolling;
+  }
+}
+
+.site-content {
+  height: 100%;
+  background: $content_bg;
+}
+
+.site-footer {
+  height: 28px;
+  background: $content_bg;
+
+  .footer__wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 8px;
+    max-width: 1020px;
+    font-size: 70%;
+
+    .footer--left,
+    .footer--right {
+      display: flex;
+    }
+
+    .footer--left {
+      display: block;
+      width: 50%;
+      a {
+        display: inline;
+        color: $link_color;
+      }
+    }
+
+    .footer--right {
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.clearfix {
+  display: table;
+  clear: both;
+}
