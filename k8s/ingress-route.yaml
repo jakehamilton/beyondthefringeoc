@@ -1,0 +1,39 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: beyond-the-fringe-http
+  labels:
+    app.kubernetes.io/name: beyond-the-fringe-http
+    app.kubernetes.io/part-of: beyond-the-fringe
+spec:
+  entryPoints:
+    - http
+  routes:
+    - kind: Rule
+      match: Host(`beyondthefringeoc.com`) || Host(`hairbyjanine.com`)
+      services:
+        - name: beyond-the-fringe
+          port: 80
+      middlewares:
+        - name: redirect-to-https
+          namespace: traefik
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: beyond-the-fringe-https
+  labels:
+    app.kubernetes.io/name: beyond-the-fringe-https
+    app.kubernetes.io/part-of: beyond-the-fringe
+spec:
+  tls:
+    secretName: beyond-the-fringe-tls
+  entryPoints:
+    - https
+  routes:
+    - kind: Rule
+      match: Host(`beyondthefringeoc.com`) || Host(`hairbyjanine.com`)
+      services:
+        - name: beyond-the-fringe
+          port: 80

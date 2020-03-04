@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: beyond-the-fringe
+  labels:
+    app.kubernetes.io/name: beyond-the-fringe-service
+    app.kubernetes.io/part-of: beyond-the-fringe
+spec:
+  ports:
+    - port: 80
+  selector:
+    app.kubernetes.io/name: beyond-the-fringe-pod
+    app.kubernetes.io/part-of: beyond-the-fringe
