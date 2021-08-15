@@ -73,11 +73,11 @@
   max-width: $content_max_width;
 
   .people {
-    display: block;
+    display: flex;
+    justify-content: center;
 
     .person__wrapper {
       position: relative;
-      float: left;
       display: inline-block;
       margin-top: 16px;
       width: 320px;
@@ -106,15 +106,6 @@
 
         .janine {
           background-image: url('../img/profile_1.jpg');
-        }
-
-        .deanna {
-          background-image: url('../img/profile_2.jpg');
-          background-position: center center;
-        }
-
-        .jessica {
-          background-image: url('../img/profile_3.jpg');
         }
 
         .person__name {
@@ -157,6 +148,7 @@
         }
 
         hr {
+          border: none;
           border-top: .5px solid $person_separator_color;
         }
       }

@@ -52,10 +52,12 @@
   padding-top: 0;
   max-width: 1020px; }
   .sections--people .people {
-    display: block; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .sections--people .people .person__wrapper {
       position: relative;
-      float: left;
       display: inline-block;
       margin-top: 16px;
       width: 320px;
@@ -78,11 +80,6 @@
           background-size: cover; }
         .sections--people .people .person__wrapper .person .janine {
           background-image: url("../img/profile_1.jpg"); }
-        .sections--people .people .person__wrapper .person .deanna {
-          background-image: url("../img/profile_2.jpg");
-          background-position: center center; }
-        .sections--people .people .person__wrapper .person .jessica {
-          background-image: url("../img/profile_3.jpg"); }
         .sections--people .people .person__wrapper .person .person__name {
           text-align: center;
           margin-top: 16px;
@@ -111,6 +108,7 @@
           .sections--people .people .person__wrapper .person a:hover {
             text-decoration: underline; }
         .sections--people .people .person__wrapper .person hr {
+          border: none;
           border-top: 0.5px solid #ededed; }
 
 .sections--testimonials {

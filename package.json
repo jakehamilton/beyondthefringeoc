@@ -4,8 +4,8 @@
   "description": "Beyond The Fringe OC Website",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "build": "guilp css html js",
+    "start": "gulp default",
+    "build": "gulp css html js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jake Hamilton",
